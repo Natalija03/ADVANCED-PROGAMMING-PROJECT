@@ -3,12 +3,12 @@
 ###
 
 ## SPECIFICATION
-## CRC CARDS
-## UML DIAGRAMS
-## TEMPLATES
 ## DATA
 ## LIBRARIES
 ## HTML PAGE
+## CRC CARDS
+## UML DIAGRAMS
+## TEMPLATES
 ## AUTHORS
 1. Bekink Laura
 2. Mojsilović Natalija
