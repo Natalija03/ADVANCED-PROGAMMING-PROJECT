@@ -56,6 +56,5 @@ To run the page properly, in the file ```operations.py```, set filename to path 
 ## AUTHORS
 1. Bekink Laura
 2. Mojsilović Natalija
-3. Papenberg Russel
-4. Sarialan Sedef
-5. Sgaramella Chiara
+3. Sarialan Sedef
+4. Sgaramella Chiara
