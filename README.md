@@ -4,6 +4,7 @@
 
 ## SPECIFICATION
 ## DATA
+
 ## LIBRARIES
 Several different libraries are used in the programm:
 ```python
@@ -15,9 +16,11 @@ import pyensembl
 from pyensembl import EnsemblRelease
 ```
 ## HTML PAGE
+## TEMPLATES
+## RUNNING THE HTML
+For reasons unknown to us, when the website is run using safari, images inserted using <img> tag aren't displayed. To avoid this issue we suggest running the website using Google Chrome as it has been shown to execute the website correctly.
 ## CRC CARDS
 ## UML DIAGRAMS
-## TEMPLATES
 ## AUTHORS
 1. Bekink Laura
 2. Mojsilović Natalija
