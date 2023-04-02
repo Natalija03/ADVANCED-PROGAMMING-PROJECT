@@ -18,7 +18,7 @@ from pyensembl import EnsemblRelease
 ## HTML PAGE
 ## TEMPLATES
 ## RUNNING THE HTML
-For reasons unknown to us, when the website is run using Safari, images inserted using ```<img>``` tag aren't displayed. To avoid this issue we suggest running the website using Google Chrome.
+To run the page properly, in the file ```operations.py```, set filename to path leading to the gff3 file on your computer. 
 ## CRC CARDS
 ## UML DIAGRAMS
 ## AUTHORS
