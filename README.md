@@ -4,8 +4,8 @@
 
 ## SPECIFICATION
 ## OPERATIONS
-Operation 1: basic_info
-This operation returns the column names and their respective data types to a list. the names of each column and the data they store is universal in all gff3 files.
+### Operation 1: basic_info
+### This operation returns the column names and their respective data types to a list. the names of each column and the data they store is universal in all gff3 files.
 Operation 2: unique_sequence_ids
 This operation traverses column 1 (‘seqid’), storing in a separate list all unique sequence IDs that are encountered. Multiple features can have the same sequid but store different types of data (like exons or supercontigs).
 Operation 3: unique_operation_types
