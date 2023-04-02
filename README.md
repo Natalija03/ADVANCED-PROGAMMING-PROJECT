@@ -4,7 +4,7 @@
 
 ## SPECIFICATION
 ## DATA
-
+Data can be downloaded from the following link ```https://bit.ly/3X3yHXp```.
 ## LIBRARIES
 Several different libraries are used in the programm:
 ```python
