@@ -56,8 +56,7 @@ from abc import ABC
 ## HTML PAGE
 ## TEMPLATES
 ## RUNNING THE HTML
-To run the page properly, in the file ```operations.py```, filename needs to be set to path leading to the gff3 file on the user's computer. We tried storing the gff3 file in the same folder as the website and templates so that we don't have to copy the entire path to it, but just the name. However, this method just wouldn't work. Perhaps the issue was with our devices since laptops we tried on were the same model and running on the same interpreter (Visual studio code). 
-## CRC CARDS
+To run the page properly, in the file ```operations.py```, filename needs to be set to path leading to the gff3 file on the user's computer.
 ## UML DIAGRAMS
 ## AUTHORS
 1. Bekink Laura
