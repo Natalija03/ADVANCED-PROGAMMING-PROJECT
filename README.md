@@ -35,6 +35,14 @@ This operation creates a separate data frame containing all the data from source
 Operation 8: ensemble_havana_dataset
 
 This operation creates a new dataset containing all data obtained from sources ‘havana’, ‘ensembl’ and ‘ensembl_havana’
+
+Operation 9: count_entries_by_type_ensembl_havana
+
+This operation creates a new dataset containing all data obtained from sources ‘havana’, ‘ensembl’ and ‘ensembl_havana’, and the counts the number of entries of this new dataset by type, storing them in a dictionary. It combined features implemented in Operation 8 and Operation 5
+
+Operation 10: gene_names_ensembl_havana
+
+This operation creates a new dataset containing only data of type ‘gene’ that derives from sources ‘havana’, ‘ensembl’ and ‘ensembl_havana’, and then filters the attributes column (column 9) for the names of each gene, storing them in a list.
 ## DATA
 Data can be downloaded from the following link ```https://bit.ly/3X3yHXp```.
 ## LIBRARIES
@@ -44,8 +52,6 @@ from flask import Flask, render_template
 import gffpandas.gffpandas as gffpd
 import pandas as pd
 from abc import ABC
-import pyensembl
-from pyensembl import EnsemblRelease
 ```
 ## HTML PAGE
 ## TEMPLATES
