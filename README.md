@@ -5,6 +5,9 @@
 ## SPECIFICATION
 
 ## OPERATIONS
+This is a list of operations provided in ```operations.py``` file:
+
+
 Operation 1: basic_info
 
 This operation returns the column names and their respective data types to a list. the names of each column and the data they store is universal in all gff3 files.
@@ -55,7 +58,13 @@ import pandas as pd
 from abc import ABC
 ```
 ## TEMPLATES
-The templates folder contains HTML files that display the output that was cretaed through the operations in the ```operations.py``` file
+The templates folder contains HTML files that display the output that was cretaed through the operations in the ```operations.py``` file.
+## CREATE_HTML
+File ```create_html.py``` contains a function that we wrote to help design html page to display results of 6, 8 and 9th operation. We import this file as module in website.py. Function ```creator``` takes three parameters:
+ - filepath (absolute path to the html file which we want to edit)
+ - table (table created from data returned by the operation we are running)
+ - headline (the title we want displayed on top of html page)
+The function edits an existing html file to create a page with general appearance resembling those of pages corresponding to remaining 7 operations. 
 ## RUNNING THE HTML
 Once the user has installed all the necessary libraries and downloaded the dataset, html templates and py files, website can be run. We'd suggest running the website from Thonny since we've faced difficulties when running the program in VSCode. When the user runs *website.py*, a link will be provided in the terminal which can be used to access the Homepage of the web interface.
 ***http://127.0.0.1:5000***
