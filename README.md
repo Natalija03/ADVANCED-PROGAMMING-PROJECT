@@ -61,10 +61,11 @@ from abc import ABC
 ## TEMPLATES
 The templates folder contains HTML files that display the output that was cretaed through the operations in the ```operations.py``` file.
 ## CREATE_HTML
-File ```create_html.py``` contains a function that we wrote to help design html page to display results of 6, 8 and 9th operation. We import this file as module in website.py. Function ```creator``` takes three parameters:
+File ```create_html.py``` contains a function that we wrote to help design html pages that display results of 6, 8 and 9th operation. We import this file as module in website.py. Function ```creator``` takes three parameters:
  - filepath (absolute path to the html file which we want to edit)
  - table (table created from data returned by the operation we are running)
  - headline (the title we want displayed on top of html page)
+
 The function edits an existing html file to create a page with general appearance resembling those of pages corresponding to remaining 7 operations. 
 ## RUNNING THE HTML
 Once the user has installed all the necessary libraries and downloaded the dataset, html templates and py files, website can be run. We'd suggest running the website from Thonny since we've faced difficulties when running the program in VSCode. When the user runs *website.py*, a link will be provided in the terminal which can be used to access the Homepage of the web interface.
