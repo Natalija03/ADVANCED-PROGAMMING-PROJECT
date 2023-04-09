@@ -55,6 +55,7 @@ Several different libraries are used in the programm:
 from flask import Flask, render_template
 import gffpandas.gffpandas as gffpd
 import pandas as pd
+import os
 from abc import ABC
 ```
 ## TEMPLATES
