@@ -3,6 +3,7 @@
 ###
 
 ## SPECIFICATION
+
 ## OPERATIONS
 Operation 1: basic_info
 
@@ -44,7 +45,7 @@ Operation 10: gene_names_ensembl_havana
 
 This operation creates a new dataset containing only data of type ‘gene’ that derives from sources ‘havana’, ‘ensembl’ and ‘ensembl_havana’, and then filters the attributes column (column 9) for the names of each gene, storing them in a list.
 ## DATA
-Data can be downloaded from the following link ```https://bit.ly/3X3yHXp```.
+Dataset can be downloaded from the following link ```https://bit.ly/3X3yHXp```.
 ## LIBRARIES
 Several different libraries are used in the programm:
 ```python
@@ -53,11 +54,12 @@ import gffpandas.gffpandas as gffpd
 import pandas as pd
 from abc import ABC
 ```
-## HTML PAGE
 ## TEMPLATES
+The templates folder contains HTML files that display the output that was cretaed through the operations in the ```python operations.py``` file
 ## RUNNING THE HTML
-To run the page properly, in the file ```operations.py```, filename needs to be set to path leading to the gff3 file on the user's computer.
-## UML DIAGRAMS
+Once the user has installed all the necessary libraries and downloaded the dataset, html templates and py files, website can be run. We'd suggest running the website from Thonny since we've faced difficulties when running the program in VSCode. When the user runs *website.py*, a link will be provided in the terminal which can be used to access the Homepage of the web interface.
+***http://127.0.0.1:5000***
+## CRC CARDS AND UML DIAGRAM
 ## AUTHORS
 1. Bekink Laura
 2. Mojsilović Natalija
