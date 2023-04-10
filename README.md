@@ -62,6 +62,7 @@ from abc import ABC
 ```
 ## TEMPLATES
 The templates folder contains HTML files that display the output that was cretaed through the operations in the ```operations.py``` file.
+
 ## CREATE_HTML
 File ```create_html.py``` contains a function that we wrote to help design html pages that display results of 6, 8 and 9th operation. We import this file as module in website.py. Function ```creator``` takes three parameters:
  - filepath (absolute path to the html file which we want to edit)
@@ -73,6 +74,10 @@ The function edits an existing html file to create a page with general appearanc
 ## RUNNING THE WEBSITE
 Once the user has installed all the necessary libraries and downloaded the dataset, html templates and py files, website can be run. We'd suggest running the website from Thonny since we've faced difficulties when running the program in VSCode. When the user runs *website.py*, a link will be provided in the terminal which can be used to access the web interface.
 ***http://127.0.0.1:5000***
+
+## CRC CARDS
+We have provided Class Responsibility Collaboration Cards (CRC cards) which we have used to brainstorm and put together our Object Oriented software. The CRC cards describe the two classes, Dataset and DatasetInterface, and the various methods within them. The CRC cards were created on a website called ***echeung.me/crcmaker/***
+
 ## UML DIAGRAM
 In this diagram, DatasetInterface is an abstract base class representing the interface for a dataset object. Dataset is a concrete implementation of the DatasetInterface that represents a dataset in GFF3 format.
 
