@@ -2,8 +2,6 @@
  
 ###
 
-## SPECIFICATION
-
 ## OPERATIONS
 This is a list of operations provided in ```operations.py``` file:
 
