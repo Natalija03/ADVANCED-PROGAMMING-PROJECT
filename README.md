@@ -73,6 +73,8 @@ The function edits an existing html file to create a page with general appearanc
 Once the user has installed all the necessary libraries and downloaded the dataset (according to instructions in section DATA), html templates and py files, website can be run. We'd suggest running the website from Thonny since we've faced difficulties when running the program in VSCode. When the user runs *website.py*, a link will be provided in the terminal which can be used to access the web interface.
 ***http://127.0.0.1:5000***
 
+The homepage provides user with descriptions of all the operations. User can choose an operation to run from the list provided on active operations page. We've set all the operations to active, but there is a method in the ```operations.py``` file that can be used to deactivate operation by choice.
+
 ## CRC CARDS
 We have provided Class Responsibility Collaboration Cards (CRC cards) which we have used to brainstorm and put together our Object Oriented software. The CRC cards describe the two classes, Dataset and DatasetInterface, and the various methods within them. The CRC cards were created on a website called ***echeung.me/crcmaker/***
 
