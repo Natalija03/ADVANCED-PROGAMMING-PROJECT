@@ -47,8 +47,10 @@ This operation creates a new dataset containing all data obtained from sources �
 Operation 10: gene_names_ensembl_havana
 
 This operation creates a new dataset containing only data of type ‘gene’ that derives from sources ‘havana’, ‘ensembl’ and ‘ensembl_havana’, and then filters the attributes column (column 9) for the names of each gene, storing them in a list.
+
 ## DATA
-Dataset can be downloaded from the following link ***https://bit.ly/3X3yHXp*** or from the file list in the repository. In order for website to run smoothly the dataset should be located in the same folder as all the other files and named ```Homo_sapiens.gff3```. 
+Dataset can be downloaded from the following link ***https://bit.ly/3X3yHXp*** or from the file list in the repository. In order for website to run smoothly the dataset should be located in the same folder as all the other files (ADVANCED PROGRAMMING EXAM) and named ```Homo_sapiens.gff3```. 
+
 ## LIBRARIES
 Several different libraries are used in the programm:
 ```python
@@ -67,7 +69,8 @@ File ```create_html.py``` contains a function that we wrote to help design html 
  - headline (the title we want displayed on top of html page)
 
 The function edits an existing html file to create a page with general appearance resembling those of pages corresponding to remaining 7 operations. 
-## RUNNING THE HTML
+
+## RUNNING THE WEBSITE
 Once the user has installed all the necessary libraries and downloaded the dataset, html templates and py files, website can be run. We'd suggest running the website from Thonny since we've faced difficulties when running the program in VSCode. When the user runs *website.py*, a link will be provided in the terminal which can be used to access the web interface.
 ***http://127.0.0.1:5000***
 ## UML DIAGRAM
