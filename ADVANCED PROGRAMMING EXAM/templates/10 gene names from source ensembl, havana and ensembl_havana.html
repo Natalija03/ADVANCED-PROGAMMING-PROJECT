@@ -1,0 +1,52 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-image: url('https://www.unicusano.it/blog/wp-content/uploads/2018/03/struttura-del-dna.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+  margin:0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  margin-top: 0px;
+  margin-left: 0px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+p1 {
+  color: aliceblue;
+  font-family: 'Courier New', monospace;
+  font-weight: lighter;
+  font-size: 3vw;
+}
+</style>
+</head>
+
+<body>
+    <div class="navbar">
+      <a href="homepage">Homepage</a>
+      <a href="active_operations">Active operations</a>
+    </div>
+<h1 style="color: aliceblue;font-family: 'Courier New', monospace; font-weight: lighter; font-size: 3vw;">GENE NAMES FOR ENTRIES FROM SOURCE ensembl, havana AND ensembl_havana</h1>
+<p1>
+  {% for item in result %}
+      {{ item }}<br>
+  {%endfor%}
+</p1>
+</body>
+</html>
