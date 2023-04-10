@@ -1,0 +1,122 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-image: url('https://www.unicusano.it/blog/wp-content/uploads/2018/03/struttura-del-dna.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed; 
+  background-size: 100% 100%;
+  margin:0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  margin-top: 0px;
+  margin-left: 0px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+p1 {
+  color: aliceblue;
+  font-family: 'Courier New', monospace;
+  font-weight: lighter;
+  font-size: 3vw;
+}
+
+p{
+  background-color: #ffffff;
+  margin: 0;
+  font-family:'Courier New', monospace;"
+}
+</style>
+</head>
+
+<body>
+<div class="navbar">
+  <a href = "homepage">Homepage</a>
+  <a href = "active_operations">Active operations</a>
+  <a href = "#CRC CARDS">CRC CARDS</a>
+  <a href = "#UML DIAGRAM">UML DIAGRAM</a>  
+</div>
+
+<p>
+  Operation 1: basic information about the dataset<br>
+  This operation returns the column names and their respective data types to a list. the names of each column and the data they store is universal in all gff3 files.<br><br>
+</p>
+<p1><br></p1>
+<p>
+  Operation 2: unique sequence IDs available in the dataset<br>
+  This operation traverses column 1 (‘seqid’), storing in a separate list all unique sequence IDs that are encountered. Multiple features can have the same sequid but store different types of data (like exons or supercontigs).<br><br>
+</p>
+<p1><br></p1>
+<p>
+  Operation 3: unique operation types available in the dataset<br>
+  This operation traverses column 3 (‘types’), storing in a separate list all the unique types of operations. Both operation 2 and 3 use the .unique() method provided by Pandas<br><br>
+</p>
+<p1><br></p1>
+<p>
+  Operation 4:  number of features provided by the dataset<br>
+  This operation returns a dictionary where the key-value pairs correspond to the sources from which the features have been obtained (column 2) and the total number of features that originate from that source. This operation uses the .groupby() and the .count() method provided by Pandas<br><br>
+</p>
+<p1><br></p1>
+<p>
+  Operation 5: number of entries for each type of operation<br>
+  This operation follows a similar structure to Operation 4, but the features are grouped and counted based on their operation types (column 3)<br><br>
+</p>
+<p1><br></p1>
+<p>
+  Operation 6: information about entire chromosomes<br>
+  This operation returns a new data frame containing all features about entire chromosomes, deriving from source GRCh38. The data frame is created by filtering the data based on ‘source’ (column 2)<br><br>
+</p>
+<p1><br></p1>
+<p>
+  Operation 7: fraction of unassembled sequences<br>
+  This operation creates a separate data frame containing all the data from source ‘GRCh38’ , and then counts the fraction of those filtered features that are unassembled (i.e. they are super contigs)<br><br>
+</p>
+<p1><br></p1>
+<p>
+  Operation 8: entries from source ensembl, havana and ensembl_havana<br>
+  This operation creates a new dataset containing all data obtained from sources ‘havana’, ‘ensembl’ and ‘ensembl_havana’<br><br>
+</p>
+<p1><br></p1>
+<p>
+  Operation 9: count entries for each type of operation from source ensembl, havana and ensembl_havana<br>
+  This operation creates a new dataset containing all data obtained from sources ‘havana’, ‘ensembl’ and ‘ensembl_havana’, and the counts the number of entries of this new dataset by type, storing them in a dictionary. It combined features implemented in Operation 8 and Operation 5<br><br>
+</p>
+<p1><br></p1>
+<p>
+  Operation 10: gene names from source ensembl, havana and ensembl_havana<br>
+  This operation creates a new dataset containing only data of type ‘gene’ that derives from sources ‘havana’, ‘ensembl’ and ‘ensembl_havana’, and then filters the attributes column (column 9) for the names of each gene, storing them in a list.<br><br>
+</p>
+<p1><br></p1>
+
+<div class="img-with-text">
+  <p1 id = "CRC CARDS">CRC CARDS</p1>
+  <br>
+  <img src="{{url_for('static', filename='Card 1.jpeg')}}" / width="50%">
+  <br><br><br><br>
+  <img src="{{url_for('static', filename='Card 2.jpeg')}}" / width="60%">
+</div>
+
+<div class="img-with-text">
+  <p1 id = "UML DIAGRAM">UML DIAGRAM</p1>
+  <img src="{{url_for('static', filename='Diagram.jpeg')}}" / width="100%">
+</div>
+
+</body>
+</html>
