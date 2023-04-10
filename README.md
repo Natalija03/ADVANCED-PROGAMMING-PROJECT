@@ -70,7 +70,7 @@ File ```create_html.py``` contains a function that we wrote to help design html 
 The function edits an existing html file to create a page with general appearance resembling those of pages corresponding to remaining 7 operations. 
 
 ## RUNNING THE WEBSITE
-Once the user has installed all the necessary libraries and downloaded the dataset, html templates and py files, website can be run. We'd suggest running the website from Thonny since we've faced difficulties when running the program in VSCode. When the user runs *website.py*, a link will be provided in the terminal which can be used to access the web interface.
+Once the user has installed all the necessary libraries and downloaded the dataset (according to instructions in section ## DATA), html templates and py files, website can be run. We'd suggest running the website from Thonny since we've faced difficulties when running the program in VSCode. When the user runs *website.py*, a link will be provided in the terminal which can be used to access the web interface.
 ***http://127.0.0.1:5000***
 
 ## CRC CARDS
