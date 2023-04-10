@@ -48,7 +48,7 @@ Operation 10: gene_names_ensembl_havana
 
 This operation creates a new dataset containing only data of type ‘gene’ that derives from sources ‘havana’, ‘ensembl’ and ‘ensembl_havana’, and then filters the attributes column (column 9) for the names of each gene, storing them in a list.
 ## DATA
-Dataset can be downloaded from the following link ***https://bit.ly/3X3yHXp***.
+Dataset can be downloaded from the following link ***https://bit.ly/3X3yHXp*** or from the file list in the repository. In order for website to run smoothly the dataset should be located in the same folder as all the other files and named ```Homo_sapiens.gff3```. 
 ## LIBRARIES
 Several different libraries are used in the programm:
 ```python
