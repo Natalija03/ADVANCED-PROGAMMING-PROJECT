@@ -70,7 +70,10 @@ The function edits an existing html file to create a page with general appearanc
 ## RUNNING THE HTML
 Once the user has installed all the necessary libraries and downloaded the dataset, html templates and py files, website can be run. We'd suggest running the website from Thonny since we've faced difficulties when running the program in VSCode. When the user runs *website.py*, a link will be provided in the terminal which can be used to access the web interface.
 ***http://127.0.0.1:5000***
-## CRC CARDS AND UML DIAGRAM
+## UML DIAGRAM
+In this diagram, DatasetInterface is an abstract base class representing the interface for a dataset object. Dataset is a concrete implementation of the DatasetInterface that represents a dataset in GFF3 format.
+
+Dataset has a filepath attribute that stores the path to the GFF3 file. It also has a data attribute that stores a gffpd.DataFrame object, which is a subclass of pandas.DataFrame specifically designed to work with GFF3 files. The __active_operations attribute is a list that keeps track of which operations are currently active for the dataset. Dataset implements the check_df() method, which checks whether the GFF3 file is valid and returns the gffpd.DataFrame object. It also provides methods to activate, deactivate, and check the status of different operations that can be performed on the dataset. The Dataset class provides several methods that can be used to perform different operations on the dataset. These methods are decorated with the operation decorator, which is a higher-order function that returns a wrapper function that checks whether the operation is currently active and, if so, performs the operation and returns a new Dataset object with the updated data.
 ## AUTHORS
 1. Bekink Laura
 2. Mojsilović Natalija
